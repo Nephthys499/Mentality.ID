@@ -146,7 +146,7 @@ function showQuestion() {
   const prevButton = document.getElementById("prevButton");
   const nextButton = document.getElementById("nextButton");
 
-  if (currentQuestion === 20) {
+  if (question21 == 5) {
     nextButton.innerHTML = "Submit";
     nextButton.onclick = function () {
       submitForm();
