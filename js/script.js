@@ -32,12 +32,12 @@ const socialIconsContainer = document.querySelector(".social-icons");
 function toggleSocialIcons(imageElement) {
   socialIconsContainer.innerHTML = "";
 
-  const facebookLink = imageElement.getAttribute("data-facebook");
+  const linkedinLink = imageElement.getAttribute("data-linkedin");
   const twitterLink = imageElement.getAttribute("data-twitter");
   const instagramLink = imageElement.getAttribute("data-instagram");
 
   const socialIcons = [
-    { class: "fab fa-facebook", href: facebookLink },
+    { class: "fab fa-linkedin", href: linkedinLink },
     { class: "fab fa-twitter", href: twitterLink },
     { class: "fab fa-instagram", href: instagramLink },
     // Add more social icons here
@@ -74,4 +74,19 @@ document.addEventListener("click", function (event) {
   ) {
     socialIconsContainer.classList.remove("active");
   }
+});
+// Temukan semua elemen kartu album
+const albumBoxes = document.querySelectorAll(".container .box-container .box");
+
+// Tambahkan event listener untuk setiap kartu album
+albumBoxes.forEach(albumBox => {
+  albumBox.addEventListener("click", () => {
+    // Hapus kelas 'active' dari semua kartu album
+    albumBoxes.forEach(box => {
+      box.classList.remove("active");
+    });
+
+    // Tambahkan kelas 'active' ke kartu album yang diklik
+    albumBox.classList.add("active");
+  });
 });

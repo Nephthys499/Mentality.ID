@@ -93,3 +93,28 @@
     height: 300px;
   }
 }
+/* Tambahkan gaya untuk daftar lagu */
+.container .box-container .box .content .song-list {
+  display: none;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container .box-container .box.active .content .song-list {
+  display: block;
+  margin-top: 10px;
+}
+
+.container .box-container .box .content .song-list li {
+  margin-bottom: 5px;
+}
+
+.container .box-container .box .content .song-list a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s linear;
+}
+
+.container .box-container .box .content .song-list a:hover {
+  color: #000;
+}
