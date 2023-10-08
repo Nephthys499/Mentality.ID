@@ -33,12 +33,12 @@ function toggleSocialIcons(imageElement) {
   socialIconsContainer.innerHTML = "";
 
   const linkedinLink = imageElement.getAttribute("data-linkedin");
-  const twitterLink = imageElement.getAttribute("data-twitter");
+  const envelopeLink = imageElement.getAttribute("data-envelopel");
   const instagramLink = imageElement.getAttribute("data-instagram");
 
   const socialIcons = [
     { class: "fab fa-linkedin", href: linkedinLink },
-    { class: "fab fa-twitter", href: twitterLink },
+    { class: "fas fa-envelope", href: envelopeLink },
     { class: "fab fa-instagram", href: instagramLink },
     // Add more social icons here
   ];

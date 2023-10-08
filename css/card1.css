@@ -103,6 +103,7 @@ sl-header-wrapper p {
   font-weight: 400;
 }
 .sl--sub-text {
+  font-size: 1.5rem;
   font-weight: 300;
 }
 .content-reveal-btn {
@@ -305,6 +306,7 @@ sl-header-wrapper p {
   }
   .sl--content-container .sl--card-content {
     font-weight: 300;
+    font-size: 1.5rem;
     margin-top: 15px;
     overflow-y: auto;
   }
