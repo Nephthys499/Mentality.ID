@@ -30,93 +30,22 @@ let questionnaire = document.getElementById("questionnaire");
 let values = [];
 
 function submitForm() {
-  for (let i = 1; i <= 21; i++) {
+  for (let i = 1; i <= 20; i++) {
     let question = document.getElementsByName(`q${i}`);
     for (let j = 0; j < question.length; j++) {
       if (question[j].checked) {
-        values.push(question[j].value);
+        values.push(parseInt(question[j].value)); // Parse the value to an integer and add to values array
       }
     }
   }
-  console.log(values);
-  if (values.includes("G1") && values.includes("G2") && values.includes("G9")) {
-    let result =
-      "Atur Pola makan\nDiet Bebas Garam\nOlahraga teratur\nJaga berat badan ideal\nPenolakan kebiasaan buruk\nHubungi dokter";
-    let saran =
-      "Kebutaan\nTimbul masalah pada ginjal\nMasalah pada otak, stroke atau demensia\nGangguan pada jantung seperti arteri koroner\nMasalah pada pembuluh darah seperti aneurisma";
 
-    // Gabungkan variabel result dan saran menjadi satu URL
-    let url = `hasil.html?result=${encodeURIComponent(
-      result
-    )}&saran=${encodeURIComponent(saran)}`;
+  // Calculate total score
+  total = values.reduce((acc, cur) => acc + cur, 0);
 
-    // Arahkan ke halaman hasil.html dengan URL yang telah digabungkan
-    window.location.href = url;
-  } else if (
-    values.includes("G3") &&
-    values.includes("G4") &&
-    values.includes("G9") &&
-    values.includes("G10") &&
-    values.includes("G11")
-  ) {
-    let result =
-      "Diet Bebas garam\nPenolakan kebiasaan buruk\nMenghindari stres\nObat antihipertensi\nHubungi dokter";
-    let saran =
-      "Mikroinfark pada otak\nSklerosis ginjal\nHipertrofi otot jantung";
-    let url = `hasil.html?result=${encodeURIComponent(
-      result
-    )}&saran=${encodeURIComponent(saran)}`;
-    window.location.href = url;
-  } else if (
-    values.includes("G5") &&
-    values.includes("G6") &&
-    values.includes("G9") &&
-    values.includes("G10") &&
-    values.includes("G11") &&
-    values.includes("G12") &&
-    values.includes("G13") &&
-    values.includes("G14")
-  ) {
-    let result = "Konsumsi obat secara teratur\nHubungi dokter";
-    let saran = "Aterosklerosis\nTrombosis otak\nPendarahan diberbagai organ";
-    // Gabungkan variabel result dan saran menjadi satu URL
-    let url = `hasil.html?result=${encodeURIComponent(
-      result
-    )}&saran=${encodeURIComponent(saran)}`;
-
-    // Arahkan ke halaman hasil.html dengan URL yang telah digabungkan
-    window.location.href = url;
-  } else if (
-    values.includes("G7") &&
-    values.includes("G8") &&
-    values.includes("G15") &&
-    values.includes("G16") &&
-    values.includes("G17") &&
-    values.includes("G18") &&
-    values.includes("G19") &&
-    values.includes("G20")
-  ) {
-    let result =
-      "Segera menghubungi dokter untuk tindakan lebih lanjut\nDiet bebas garam\nOlahraga teratur";
-    let saran =
-      "Diseksi aorta akut\nEdema Paru akut\nInfark miokard atau angina pektoris\nGagal ginjal akut\nTumor pada kelenjar adrenal";
-    // Gabungkan variabel result dan saran menjadi satu URL
-    let url = `hasil.html?result=${encodeURIComponent(
-      result
-    )}&saran=${encodeURIComponent(saran)}`;
-
-    // Arahkan ke halaman hasil.html dengan URL yang telah digabungkan
-    window.location.href = url;
+  if (total > 8) {
+    window.location.href = "dass.php";
   } else {
-    let result = "Segera periksa ke dokter";
-    let saran = "Segera periksa ke dokter";
-    // Gabungkan variabel result dan saran menjadi satu URL
-    let url = `hasil.html?result=${encodeURIComponent(
-      result
-    )}&saran=${encodeURIComponent(saran)}`;
-
-    // Arahkan ke halaman hasil.html dengan URL yang telah digabungkan
-    window.location.href = url;
+    window.location.href = "hasil.php";
   }
 }
 

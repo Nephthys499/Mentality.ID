@@ -35,10 +35,12 @@
         <a href="#Menu">Menu</a>
         <a href="#Music">Music</a>
         <a href="#contact">Contact</a>
-        <a href="#contact">Contact</a>
-<a href="ChatApp/index.php">Chat</a>
+
       </div>
       <div class="navbar-extra1">
+        <div class="chat">
+        <a href="ChatApp/index.php" id="chat">Chat</a>
+      </div>
         <a href="#" id="hamburger-menu1"> <i data-feather="menu"></i></a>
       </div>
     </nav>
@@ -53,7 +55,7 @@
           kesehatan mental. Mari berjalan bersama menuju kesehatan mental yang
           lebih baik!
         </p>
-        <a href="/test.html" class="go">Go</a>
+        <a href="test.php" class="go">Go</a>
       </main>
     </section>
     <!-- Hero section End -->

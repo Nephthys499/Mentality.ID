@@ -15,11 +15,11 @@
         ><span id="span2">Mentality</span><span id="span1">.ID</span></a
       >
       <div class="navbar-nav1">
-        <a href="/index.html#">Home</a>
-        <a href="/index.html#about1">About</a>
-        <a href="/index.html#Menu">Menu</a>
-        <a href="/index.html#Music">Music</a>
-        <a href="/index.html#contact">Contact</a>
+        <a href="index.php#">Home</a>
+        <a href="index.php#about1">About</a>
+        <a href="index.php#Menu">Menu</a>
+        <a href="index.php#Music">Music</a>
+        <a href="index.php#contact">Contact</a>
       </div>
       <div class="navbar-extra1">
         <a href="#" id="hamburger-menu1"> <i data-feather="menu"></i></a>
@@ -35,12 +35,8 @@
       aria-label="View source on GitHub">
     </a>
     <div class="container">
-      <header class="header">
-        <img
-          src="images/test-image.png"
-          alt=""
-          aria-hidden="true"
-          class="illustration" />
+      <!-- <header class="header">
+        
         <div class="header__content">
           <h1 id="title" class="header__title">
             Mental Health Diagnosis Questionnaire
@@ -50,7 +46,7 @@
             generate precise mental health diagnosis results.
           </p>
         </div>
-      </header>
+      </header> -->
       <main class="main">
         <form
           action="#"
@@ -78,7 +74,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q1" name="q1" value="G1" /><span
+              ><input type="radio" id="q1" name="q1"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -95,7 +91,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q2" name="q2" value="G2" /><span
+              ><input type="radio" id="q2" name="q2"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -112,7 +108,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q3" name="q3" value="G3" /><span
+              ><input type="radio" id="q3" name="q3"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -129,7 +125,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q4" name="q4" value="G4" />
+              ><input type="radio" id="q4" name="q4"  value="1" />
               <span>YES</span> <br
             /></label>
             <label
@@ -146,7 +142,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q5" name="q5" value="G5" /><span
+              ><input type="radio" id="q5" name="q5"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -163,7 +159,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q6" name="q6" value="G6" /><span
+              ><input type="radio" id="q6" name="q6"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -180,7 +176,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q7" name="q7" value="G7" /><span
+              ><input type="radio" id="q7" name="q7"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -197,7 +193,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q8" name="q8" value="G8" /><span
+              ><input type="radio" id="q8" name="q8"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -214,7 +210,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q9" name="q9" value="G9" /><span
+              ><input type="radio" id="q9" name="q9"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -232,7 +228,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q10" name="q10" value="G10" /><span
+              ><input type="radio" id="q10" name="q10"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -250,7 +246,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q11" name="q11" value="G11" /><span
+              ><input type="radio" id="q11" name="q11"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -268,7 +264,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q12" name="q12" value="G12" /><span
+              ><input type="radio" id="q12" name="q12"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -286,7 +282,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q13" name="q13" value="G13" /><span
+              ><input type="radio" id="q13" name="q13"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -304,7 +300,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q14" name="q14" value="G14" />
+              ><input type="radio" id="q14" name="q14"  value="1" />
               <span>YES</span> <br
             /></label>
             <label
@@ -321,7 +317,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q15" name="q15" value="G15" /><span
+              ><input type="radio" id="q15" name="q15"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -339,7 +335,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q16" name="q16" value="G16" /><span
+              ><input type="radio" id="q16" name="q16"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -357,7 +353,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q17" name="q17" value="G17" /><span
+              ><input type="radio" id="q17" name="q17"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -375,7 +371,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q18" name="q18" value="G18" /><span
+              ><input type="radio" id="q18" name="q18" value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -393,7 +389,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q19" name="q19" value="G19" /><span
+              ><input type="radio" id="q19" name="q19"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -410,7 +406,7 @@
               </p></label
             >
             <label
-              ><input type="radio" id="q20" name="q20" value="G20" /><span
+              ><input type="radio" id="q20" name="q20"  value="1" /><span
                 >YES</span
               ><br
             /></label>
@@ -431,8 +427,8 @@
       </main>
     </div>
     <script src="js/test2.js"></script>
-    <script>
-      feather.replace();
+     <script>
+        feather.replace();
     </script>
   </body>
 </html>
